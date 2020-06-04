@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite thread-count="1" verbose="1"
+	name="EMAPPS iOS Suite">
+
+	<test name="LoginLogoutScenarioTest">
+		<classes>
+			<class name="tests.LoginLogout" />
+		</classes>
+	</test>
+
+	<!-- <test name="RegistrationScenarioTest">
+		<classes>
+			<class name="tests.Registration" />
+		</classes>
+	</test> -->
+	
+	<test name="ChangePasswordScenarioTest">
+		<classes>
+			<class name="tests.ChangePassword" />
+		</classes>
+	</test>
+
+</suite>

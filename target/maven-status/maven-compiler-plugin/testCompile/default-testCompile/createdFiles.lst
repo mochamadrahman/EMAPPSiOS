@@ -1,0 +1,15 @@
+tests/Logout.class
+pages/HomeScreenPage.class
+tests/NegativeLogin.class
+pages/ChangePasswordPage.class
+pages/ProfilePage.class
+pages/SignUpPage.class
+tests/PositiveLogin.class
+tests/EmappsTestReport.class
+tests/AppiumExtentReport2.class
+tests/Registration.class
+tests/AppiumExtentReportX.class
+tests/LoginLogout.class
+tests/EmappsTestReportX.class
+pages/SignInPage.class
+pages/BaseClass.class
