@@ -1,6 +1,9 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.IOSElement;
@@ -137,6 +140,11 @@ public class SignInPage extends BaseClass {
 	public void negatiflogin2(String name, String password) {
 
 		clearEmail();
+		
+		/* This Waiting time just want to sure element "Toolbar Done Button" can be identified by appium */
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("Toolbar Done Button")));
+		
 		clickDoneButtonKeyboard();
 		clickSigIn();
 	}

@@ -1,5 +1,8 @@
 package tests;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.ExtentTest;
@@ -20,7 +23,6 @@ public class LoginLogout extends BaseClass {
 
 		System.out.println("\n-------PositiveLogIn---------");
 		System.out.println("\nStarting Login test");
-//		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		
 
 		
@@ -48,8 +50,11 @@ public class LoginLogout extends BaseClass {
 		
 		System.out.println("\n-------LogOut---------");
 		System.out.println("\nStarting Logout test");
-//		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 
+		/* This Waiting time just want to sure element Favorites can be identified by appium */
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("Favorites")));
+		
 		HomeScreenPage homescreenpage = new HomeScreenPage(driver);
 		if (!homescreenpage.isFavoritesDisplayed()) {
 			return;
@@ -80,7 +85,6 @@ public class LoginLogout extends BaseClass {
 		
 		System.out.println("\n-------NegativeLogIn---------");
 		System.out.println("\nStarting loginInvalidUsername test");
-//		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		
 		SignInPage signinpage = new SignInPage(driver);
 		if (!signinpage.isSignInPageDisplayed()) {
@@ -101,7 +105,6 @@ public class LoginLogout extends BaseClass {
 		
 		
 		System.out.println("\nStarting loginBlankUsername test");
-//		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		
 		SignInPage signinpage = new SignInPage(driver);
 		if (!signinpage.isSignInPageDisplayed()) {
@@ -122,7 +125,6 @@ public class LoginLogout extends BaseClass {
 		
 		
 		System.out.println("\nStarting loginInvalidPassword test");
-//		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		
 		SignInPage signinpage = new SignInPage(driver);
 		if (!signinpage.isSignInPageDisplayed()) {
@@ -143,13 +145,16 @@ public class LoginLogout extends BaseClass {
 		
 		
 		System.out.println("\nStarting loginBlankPassword test");
-//		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		
 		SignInPage signinpage = new SignInPage(driver);
 		if (!signinpage.isSignInPageDisplayed()) {
 			return;
 		}
-
+		
+		/* This Waiting time just want to sure element "//XCUIElementTypeTextField[@name='Email, Error: Please check your email address']" can be identified by appium */
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("\"//XCUIElementTypeTextField[@name='Email, Error: Please check your email address']\"")));
+		
 		signinpage.negatiflogin1("mrahmanh@gmail.com", "");
 		if (!signinpage.blankUserPassDisplayed()) {
 			return;
@@ -164,7 +169,6 @@ public class LoginLogout extends BaseClass {
 	
 		
 		System.out.println("\nStarting loginBlankUsernameAndPassword test");
-//		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		
 		SignInPage signinpage = new SignInPage(driver);
 		if (!signinpage.isSignInPageDisplayed()) {
