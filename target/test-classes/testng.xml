@@ -15,10 +15,10 @@
 		</classes>
 	</test> -->
 	
-	<test name="ChangePasswordScenarioTest">
+	<!-- <test name="ChangePasswordScenarioTest">
 		<classes>
 			<class name="tests.ChangePassword" />
 		</classes>
-	</test>
+	</test> -->
 
 </suite>
