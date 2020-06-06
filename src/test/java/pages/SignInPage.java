@@ -128,6 +128,11 @@ public class SignInPage extends BaseClass {
 	}
 
 	public void negatiflogin1(String name, String password) {
+		
+
+		/* This Waiting time just want to sure element "//XCUIElementTypeTextField[@name='Email, Error: Please check your email address']" can be identified by appium */
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeTextField[@name='Email, Error: Please check your email address']")));
 
 		typeEmail1(name);
 		clickDoneButtonKeyboard();

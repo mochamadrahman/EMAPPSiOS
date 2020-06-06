@@ -50,12 +50,13 @@ public class LoginLogout extends BaseClass {
 		
 		System.out.println("\n-------LogOut---------");
 		System.out.println("\nStarting Logout test");
-
+		
+		HomeScreenPage homescreenpage = new HomeScreenPage(driver);
+		
 		/* This Waiting time just want to sure element Favorites can be identified by appium */
 		WebDriverWait wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("Favorites")));
 		
-		HomeScreenPage homescreenpage = new HomeScreenPage(driver);
 		if (!homescreenpage.isFavoritesDisplayed()) {
 			return;
 		}
@@ -151,9 +152,6 @@ public class LoginLogout extends BaseClass {
 			return;
 		}
 		
-		/* This Waiting time just want to sure element "//XCUIElementTypeTextField[@name='Email, Error: Please check your email address']" can be identified by appium */
-		WebDriverWait wait = new WebDriverWait(driver, 30);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("\"//XCUIElementTypeTextField[@name='Email, Error: Please check your email address']\"")));
 		
 		signinpage.negatiflogin1("mrahmanh@gmail.com", "");
 		if (!signinpage.blankUserPassDisplayed()) {
