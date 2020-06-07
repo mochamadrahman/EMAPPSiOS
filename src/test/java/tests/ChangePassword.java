@@ -80,9 +80,6 @@ public class ChangePassword extends BaseClass {
 
 		HomeScreenPage homescreenpage = new HomeScreenPage(driver);
 
-		System.out.println("Login with New Password Test successfully");
-		System.out.println("\n");
-
 		homescreenpage.clickMore();
 
 		ProfilePage profilepage = new ProfilePage(driver);
@@ -96,28 +93,13 @@ public class ChangePassword extends BaseClass {
 		
 		changepasspage.changePassword("mrhh1975", "ccgl0618", "ccgl0618");
 		
+		System.out.println("Login with New Password Test successfully");
+		System.out.println("\n");
+		
 	}
 
 	@Test(priority = 3)
 	public void differentNewPassword() {
-
-		/* Start tambahan */
-
-//		SignInPage signinpage = new SignInPage(driver);
-//		if (!signinpage.isSignInPageDisplayed()) {
-//			return;
-//		}
-//
-//		signinpage.login("mrahmanh@gmail.com", "ccgl0618");
-//
-//		HomeScreenPage homescreenpage = new HomeScreenPage(driver);
-//		if (!homescreenpage.isloginSuccessfulyDisplayed()) {
-//			return;
-//		}
-//
-//		homescreenpage.clickMore();
-
-		/* End tambahan */
 
 		ProfilePage profilepage = new ProfilePage(driver);
 		profilepage.clickPasswordChange();
