@@ -13,7 +13,6 @@ public class Registration extends BaseClass {
 
 		System.out.println("\n-------NegativeRegistration----------");
 		System.out.println("\nStarting  firstNameMaxLengthChar test");
-//		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		SignInPage signinpage = new SignInPage(driver);
 
 		signinpage.signup();
@@ -33,8 +32,13 @@ public class Registration extends BaseClass {
 	@Test(priority = 2)
 	public void RegisterLastNameMaxLengthChar() {
 
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
 		System.out.println("\nStarting  laststNameMaxLengthChar test");
-//		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		
 		SignInPage signinpage = new SignInPage(driver);
 
@@ -58,7 +62,6 @@ public class Registration extends BaseClass {
 	public void RegisterInvalidEmailFormat() {
 
 		System.out.println("\nStarting  invalidEmailFormat test");
-//		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		SignInPage signinpage = new SignInPage(driver);
 
 		signinpage.signup();
@@ -79,8 +82,13 @@ public class Registration extends BaseClass {
 	@Test(priority = 4)
 	public void RegisterPasswordLess6Characters() {
 
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
 		System.out.println("\nStarting  passwordLess6Characters test");
-//		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		SignInPage signinpage = new SignInPage(driver);
 
 		signinpage.signup();
@@ -101,8 +109,13 @@ public class Registration extends BaseClass {
 	@Test(priority = 5)
 	public void RegisterPasswordMore20Characters() {
 
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
 		System.out.println("\nStarting  passwordMore20Characters test");
-//		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		SignInPage signinpage = new SignInPage(driver);
 
 		signinpage.signup();
@@ -116,7 +129,7 @@ public class Registration extends BaseClass {
 			return;
 		}
 
-//		System.out.println("passwordMore20Characters Test successfully");
+		System.out.println("passwordMore20Characters Test successfully");
 		System.out.println("\n");
 
 	}

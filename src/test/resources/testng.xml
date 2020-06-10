@@ -2,7 +2,7 @@
 
 <suite thread-count="1" verbose="1" name="EMAPPS iOS Suite">
 
-	<test name="LoginLogoutScenarioTest">
+	<!-- <test name="LoginLogoutScenarioTest">
 		<classes>
 			<class name="tests.LoginLogout" />
 		</classes>
@@ -17,6 +17,12 @@
 	<test name="ChangePasswordScenarioTest">
 		<classes>
 			<class name="tests.ChangePassword" />
+		</classes>
+	</test> -->
+	
+	<test name="ForgotAndNewPasswordScenarioTest">
+		<classes>
+			<class name="tests.ForgotAndNewPassword" />
 		</classes>
 	</test>
 

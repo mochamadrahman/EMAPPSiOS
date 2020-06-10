@@ -47,6 +47,11 @@ public class LoginLogout extends BaseClass {
 	@Test(priority = 2)
 	public void Logout() {
 		
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		
 		System.out.println("\n-------LogOut---------");
 		System.out.println("\nStarting Logout test");
@@ -83,6 +88,11 @@ public class LoginLogout extends BaseClass {
 	@Test(priority = 3)
 	public void LoginInvalidUsername() {
 		
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		
 		System.out.println("\n-------NegativeLogIn---------");
 		System.out.println("\nStarting loginInvalidUsername test");
@@ -104,6 +114,11 @@ public class LoginLogout extends BaseClass {
 	@Test(priority = 5)
 	public void LoginBlankUsername() {
 		
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		
 		System.out.println("\nStarting loginBlankUsername test");
 		
@@ -124,6 +139,11 @@ public class LoginLogout extends BaseClass {
 	@Test(priority = 4)
 	public void LoginInvalidPassword() {
 		
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		
 		System.out.println("\nStarting loginInvalidPassword test");
 		
@@ -144,6 +164,11 @@ public class LoginLogout extends BaseClass {
 	@Test(priority = 6)
 	public void LoginBlankPassword() {
 		
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		
 		System.out.println("\nStarting loginBlankPassword test");
 		
@@ -165,6 +190,11 @@ public class LoginLogout extends BaseClass {
 	@Test(priority = 7)
 	public void LoginBlankUsernameAndPassword() {
 	
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		
 		System.out.println("\nStarting loginBlankUsernameAndPassword test");
 		
@@ -180,7 +210,12 @@ public class LoginLogout extends BaseClass {
 
 		System.out.println("loginBlankUsernameAndPassword test successfully");
 		System.out.println("\n");
-
+		
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 
 }

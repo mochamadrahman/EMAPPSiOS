@@ -158,6 +158,10 @@ public class SignInPage extends BaseClass {
 
 		clickSignUp();
 	}
+	
+	public void forgotPassword() {
+		clickForgotPassword();
+	}
 
 	/**
     *

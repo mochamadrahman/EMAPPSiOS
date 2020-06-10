@@ -69,6 +69,12 @@ public class ChangePassword extends BaseClass {
 	@Test(priority = 2)
 	public void loginWithNewPassword() {
 
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
 		System.out.println("\nStarting Login with New Password Test");
 
 		SignInPage signinpage = new SignInPage(driver);
@@ -104,6 +110,12 @@ public class ChangePassword extends BaseClass {
 		ProfilePage profilepage = new ProfilePage(driver);
 		profilepage.clickPasswordChange();
 
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
 		System.out.println("Starting Different New Password Test");
 
 		ChangePassPage changepasspage = new ChangePassPage(driver);
@@ -121,6 +133,12 @@ public class ChangePassword extends BaseClass {
 	@Test(priority = 4)
 	public void invalidOldPassword() {
 
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
 		System.out.println("Starting Invalid Old Password Test");
 
 		ChangePassPage changepasspage = new ChangePassPage(driver);
@@ -150,6 +168,12 @@ public class ChangePassword extends BaseClass {
 		ProfilePage profilepage = new ProfilePage(driver);
 		profilepage.clickPasswordChange();
 
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
 		System.out.println("Starting Cancel Change Password Test");
 
 		/* This Waiting time just want to sure element Back can be identified by appium */
@@ -165,6 +189,12 @@ public class ChangePassword extends BaseClass {
 
 		System.out.println("Cancel Change Password Test successfully");
 		System.out.println("\n");
+		
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 
 	}
 
