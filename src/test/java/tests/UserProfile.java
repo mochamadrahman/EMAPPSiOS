@@ -84,6 +84,8 @@ public class UserProfile extends BaseClass {
 
 		System.out.println("Starting Modify ProfileData Test");
 
+		sleep(3000);
+		
 		UpdateProfilePage updateprofilepage = new UpdateProfilePage(driver);
 		if (!updateprofilepage.updateUserProfileDisplayed()) {
 			return;
