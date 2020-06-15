@@ -30,7 +30,7 @@ public class UserProfile extends BaseClass {
 		signinpage.login("mrahmanh@gmail.com", "ccgl0618");
 
 		HomeScreenPage homescreenpage = new HomeScreenPage(driver);
-		if (!homescreenpage.isloginSuccessfulyDisplayed()) {
+		if (!homescreenpage.isFavoritesDisplayed()) {
 			return;
 		}
 
