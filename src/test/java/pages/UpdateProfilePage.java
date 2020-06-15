@@ -18,7 +18,7 @@ public class UpdateProfilePage extends BaseClass {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 
-	@iOSXCUITFindBy(id = "USER PROFILE")
+	@iOSXCUITFindBy(accessibility = "USER PROFILE")
 	private IOSElement userProfileElement;
 
 	@iOSXCUITFindBy(accessibility = "Edit Profile")
