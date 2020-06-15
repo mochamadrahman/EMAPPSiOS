@@ -32,11 +32,7 @@ public class Registration extends BaseClass {
 	@Test(priority = 2)
 	public void RegisterLastNameMaxLengthChar() {
 
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+		sleep(5000);
 		
 		System.out.println("\nStarting  laststNameMaxLengthChar test");
 		
@@ -81,12 +77,8 @@ public class Registration extends BaseClass {
 
 	@Test(priority = 4)
 	public void RegisterPasswordLess6Characters() {
-
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+		
+		sleep(5000);
 		
 		System.out.println("\nStarting  passwordLess6Characters test");
 		SignInPage signinpage = new SignInPage(driver);
@@ -109,11 +101,7 @@ public class Registration extends BaseClass {
 	@Test(priority = 5)
 	public void RegisterPasswordMore20Characters() {
 
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+		sleep(5000);
 		
 		System.out.println("\nStarting  passwordMore20Characters test");
 		SignInPage signinpage = new SignInPage(driver);
@@ -131,7 +119,18 @@ public class Registration extends BaseClass {
 
 		System.out.println("passwordMore20Characters Test successfully");
 		System.out.println("\n");
+		
+		sleep(5000);
 
+	}
+	
+	private void sleep(long m) {
+		try {
+			Thread.sleep(m);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }

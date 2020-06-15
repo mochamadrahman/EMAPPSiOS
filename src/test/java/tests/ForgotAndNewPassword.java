@@ -25,7 +25,13 @@ public class ForgotAndNewPassword extends BaseClass {
 		if (!signinpage.isSignInPageDisplayed()) {
 			return;
 		}
-
+		
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
 		System.out.println("\nStarting Query Confirmation Code Test");
 
 		signinpage.clickForgotPassword();

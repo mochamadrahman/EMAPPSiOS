@@ -35,7 +35,7 @@ public class LoginLogout extends BaseClass {
 		
 		
 		HomeScreenPage homescreenpage = new HomeScreenPage(driver);
-		if (!homescreenpage.isloginSuccessfulyDisplayed()) {
+		if (!homescreenpage.isFavoritesDisplayed()) {
 			return;
 		}
 		
