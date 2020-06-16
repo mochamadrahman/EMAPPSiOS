@@ -1,5 +1,7 @@
 package tests;
 
+import static org.testng.Assert.assertTrue;
+
 import org.testng.annotations.Test;
 
 import pages.BaseClass;
@@ -13,18 +15,15 @@ public class Registration extends BaseClass {
 
 		System.out.println("\n-------NegativeRegistration----------");
 		System.out.println("\nStarting  firstNameMaxLengthChar test");
+		
 		SignInPage signinpage = new SignInPage(driver);
-
 		signinpage.signup();
+		
 		SignUpPage signuppage = new SignUpPage(driver);
-		if (!signuppage.isSignUpHeaderDisplayed()) {
-			return;
-		}
+		assertTrue(signuppage.isSignUpHeaderDisplayed());
 
 		signuppage.firstname("qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvb");
-		if (!signuppage.ismaxLength50FirstNameDisplayed()) {
-			return;
-		}
+		assertTrue(signuppage.ismaxLength50FirstNameDisplayed());
 
 		System.out.println("firstNameMaxLengthChar Test successfully");
 	}
@@ -36,19 +35,10 @@ public class Registration extends BaseClass {
 		
 		System.out.println("\nStarting  laststNameMaxLengthChar test");
 		
-		SignInPage signinpage = new SignInPage(driver);
-
-		signinpage.signup();
 		SignUpPage signuppage = new SignUpPage(driver);
-		if (!signuppage.isSignUpHeaderDisplayed()) {
-			return;
-		}
-	
-
+		
 		signuppage.lastname("qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvb");
-		if (!signuppage.ismaxLength50LastNameDisplayed()) {
-			return;
-		}
+		assertTrue(signuppage.ismaxLength50LastNameDisplayed());
 
 		System.out.println("lastNameMaxLengthChar Test successfully");
 
@@ -58,18 +48,11 @@ public class Registration extends BaseClass {
 	public void RegisterInvalidEmailFormat() {
 
 		System.out.println("\nStarting  invalidEmailFormat test");
-		SignInPage signinpage = new SignInPage(driver);
-
-		signinpage.signup();
+		
 		SignUpPage signuppage = new SignUpPage(driver);
-		if (!signuppage.isSignUpHeaderDisplayed()) {
-			return;
-		}
 
 		signuppage.email("1234addgmail.com");
-		if (!signuppage.isinvalidEmailFormatDisplayed()) {
-			return;
-		}
+		assertTrue(signuppage.isinvalidEmailFormatDisplayed());
 
 		System.out.println("invalidEmailFormat Test successfully");
 
@@ -81,18 +64,11 @@ public class Registration extends BaseClass {
 		sleep(5000);
 		
 		System.out.println("\nStarting  passwordLess6Characters test");
-		SignInPage signinpage = new SignInPage(driver);
-
-		signinpage.signup();
+		
 		SignUpPage signuppage = new SignUpPage(driver);
-		if (!signuppage.isSignUpHeaderDisplayed()) {
-			return;
-		}
 
 		signuppage.password("12345");
-		if (!signuppage.isoutOfRangePasswordCharDisplayed()) {
-			return;
-		}
+		assertTrue(signuppage.isoutOfRangePasswordCharDisplayed());
 
 		System.out.println("passwordLess6Characters Test successfully");
 
@@ -104,18 +80,11 @@ public class Registration extends BaseClass {
 		sleep(5000);
 		
 		System.out.println("\nStarting  passwordMore20Characters test");
-		SignInPage signinpage = new SignInPage(driver);
-
-		signinpage.signup();
+		
 		SignUpPage signuppage = new SignUpPage(driver);
-		if (!signuppage.isSignUpHeaderDisplayed()) {
-			return;
-		}
 
 		signuppage.password("1234567890123456789012");
-		if (!signuppage.isoutOfRangePasswordCharDisplayed()) {
-			return;
-		}
+		assertTrue(signuppage.isoutOfRangePasswordCharDisplayed());
 
 		System.out.println("passwordMore20Characters Test successfully");
 		System.out.println("\n");

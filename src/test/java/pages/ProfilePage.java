@@ -91,6 +91,14 @@ public class ProfilePage extends BaseClass {
 	public boolean isProfileDOBDisplayed() {
 		return profileDOBElement.isDisplayed();
 	}
+	
+	public boolean isPasswordChangeDisplayed() {
+		return passwordElement.isDisplayed();
+	}
+	
+	public boolean isSignOutDisplayed() {
+		return signoutElement.isDisplayed();
+	}
 
 	public void clickSignOut() {
 		signoutElement.click();

@@ -1,5 +1,7 @@
 package tests;
 
+import static org.testng.Assert.assertTrue;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -21,18 +23,14 @@ public class UserProfile extends BaseClass {
 	public void checkAndValidateProfileData() {
 
 		SignInPage signinpage = new SignInPage(driver);
-		if (!signinpage.isSignInPageDisplayed()) {
-			return;
-		}
+		assertTrue(signinpage.isSignInPageDisplayed());
 
 		sleep(3000);
 
 		signinpage.login("mrahmanh@gmail.com", "ccgl0618");
 
 		HomeScreenPage homescreenpage = new HomeScreenPage(driver);
-		if (!homescreenpage.isFavoritesDisplayed()) {
-			return;
-		}
+		assertTrue(homescreenpage.isFavoritesDisplayed());
 
 		sleep(3000);
 
@@ -42,30 +40,22 @@ public class UserProfile extends BaseClass {
 		homescreenpage.clickMore();
 
 		ProfilePage profilepage = new ProfilePage(driver);
-		if (!profilepage.isWelcomeBackDisplayed()) {
-			return;
-		}
-		if (!profilepage.isProfileNameDisplayed()) {
-			return;
-		}
-		if (!profilepage.isProfileEmailDisplayed()) {
-			return;
-		}
-		if (!profilepage.isProfileAddressDisplayed()) {
-			return;
-		}
-		if (!profilepage.isProfileGenderDisplayed()) {
-			return;
-		}
-		if (!profilepage.isProfileDOBDisplayed()) {
-			return;
-		}
-		if (!profilepage.isWelcomeBackDisplayed()) {
-			return;
-		}
-		if (!profilepage.isWelcomeBackDisplayed()) {
-			return;
-		}
+
+		assertTrue(profilepage.isWelcomeBackDisplayed());
+
+		assertTrue(profilepage.isProfileNameDisplayed());
+
+		assertTrue(profilepage.isProfileEmailDisplayed());
+
+		assertTrue(profilepage.isProfileAddressDisplayed());
+
+		assertTrue(profilepage.isProfileGenderDisplayed());
+
+		assertTrue(profilepage.isProfileDOBDisplayed());
+		
+		assertTrue(profilepage.isPasswordChangeDisplayed());
+		
+		assertTrue(profilepage.isSignOutDisplayed());
 
 		sleep(3000);
 
@@ -85,11 +75,9 @@ public class UserProfile extends BaseClass {
 		System.out.println("Starting Modify ProfileData Test");
 
 		sleep(3000);
-		
+
 		UpdateProfilePage updateprofilepage = new UpdateProfilePage(driver);
-		if (!updateprofilepage.updateUserProfileDisplayed()) {
-			return;
-		}
+		assertTrue(updateprofilepage.updateUserProfileDisplayed());
 
 		// swipe page up
 		Map<String, Object> args = new HashMap<String, Object>();
@@ -98,18 +86,15 @@ public class UserProfile extends BaseClass {
 
 		sleep(3000);
 
-		if (!updateprofilepage.buttonEditProfileDisplayed()) {
-			return;
-		}
+		assertTrue(updateprofilepage.buttonEditProfileDisplayed());
 
 		updateprofilepage.modifyProfile("Azhar", "Fahlavi", "Bandung");
 
 		sleep(3000);
 
 		updateprofilepage.clickSaveProfile();
-		if (!updateprofilepage.successUpdateProfileDisplayed()) {
-			return;
-		}
+
+		assertTrue(updateprofilepage.successUpdateProfileDisplayed());
 
 		sleep(3000);
 
@@ -133,21 +118,16 @@ public class UserProfile extends BaseClass {
 		System.out.println("Starting Validate NEW ProfileData Test");
 
 		ProfilePage profilepage = new ProfilePage(driver);
-		if (!profilepage.isProfileName1Displayed()) {
-			return;
-		}
-		if (!profilepage.isProfileEmailDisplayed()) {
-			return;
-		}
-		if (!profilepage.isProfileAddress1Displayed()) {
-			return;
-		}
-		if (!profilepage.isProfileGenderDisplayed()) {
-			return;
-		}
-		if (!profilepage.isProfileDOBDisplayed()) {
-			return;
-		}
+
+		assertTrue(profilepage.isProfileName1Displayed());
+
+		assertTrue(profilepage.isProfileEmailDisplayed());
+
+		assertTrue(profilepage.isProfileAddress1Displayed());
+
+		assertTrue(profilepage.isProfileGenderDisplayed());
+
+		assertTrue(profilepage.isProfileDOBDisplayed());
 
 		sleep(3000);
 
@@ -166,9 +146,8 @@ public class UserProfile extends BaseClass {
 		profilepage.clickModifyProfile();
 
 		UpdateProfilePage updateprofilepage = new UpdateProfilePage(driver);
-		if (!updateprofilepage.updateUserProfileDisplayed()) {
-			return;
-		}
+
+		assertTrue(updateprofilepage.updateUserProfileDisplayed());
 
 		// swipe page up
 		Map<String, Object> args = new HashMap<String, Object>();
@@ -177,18 +156,15 @@ public class UserProfile extends BaseClass {
 
 		sleep(5000);
 
-		if (!updateprofilepage.buttonEditProfileDisplayed()) {
-			return;
-		}
+		assertTrue(updateprofilepage.buttonEditProfileDisplayed());
 
 		updateprofilepage.modifyProfile("Moch", "Rahman", "Jakarta");
 
 		sleep(5000);
 
 		updateprofilepage.clickSaveProfile();
-		if (!updateprofilepage.successUpdateProfileDisplayed()) {
-			return;
-		}
+
+		assertTrue(updateprofilepage.successUpdateProfileDisplayed());
 
 		sleep(5000);
 
@@ -215,9 +191,7 @@ public class UserProfile extends BaseClass {
 		profilepage.clickModifyProfile();
 
 		UpdateProfilePage updateprofilepage = new UpdateProfilePage(driver);
-		if (!updateprofilepage.updateUserProfileDisplayed()) {
-			return;
-		}
+		assertTrue(updateprofilepage.updateUserProfileDisplayed());
 
 		// swipe page up
 		Map<String, Object> args = new HashMap<String, Object>();
@@ -226,9 +200,7 @@ public class UserProfile extends BaseClass {
 
 		sleep(5000);
 
-		if (!updateprofilepage.buttonEditProfileDisplayed()) {
-			return;
-		}
+		assertTrue(updateprofilepage.buttonEditProfileDisplayed());
 
 		updateprofilepage.modifyProfile("Azhar", "Fahlavi", "Bandung");
 
@@ -241,30 +213,17 @@ public class UserProfile extends BaseClass {
 
 		updateprofilepage.clickBackButton();
 
-		if (!profilepage.isWelcomeBackDisplayed()) {
-			return;
-		}
-		if (!profilepage.isProfileNameDisplayed()) {
-			return;
-		}
-		if (!profilepage.isProfileEmailDisplayed()) {
-			return;
-		}
-		if (!profilepage.isProfileAddressDisplayed()) {
-			return;
-		}
-		if (!profilepage.isProfileGenderDisplayed()) {
-			return;
-		}
-		if (!profilepage.isProfileDOBDisplayed()) {
-			return;
-		}
-		if (!profilepage.isWelcomeBackDisplayed()) {
-			return;
-		}
-		if (!profilepage.isWelcomeBackDisplayed()) {
-			return;
-		}
+		assertTrue(profilepage.isWelcomeBackDisplayed());
+
+		assertTrue(profilepage.isProfileNameDisplayed());
+
+		assertTrue(profilepage.isProfileEmailDisplayed());
+
+		assertTrue(profilepage.isProfileAddressDisplayed());
+
+		assertTrue(profilepage.isProfileGenderDisplayed());
+
+		assertTrue(profilepage.isProfileDOBDisplayed());
 
 		System.out.println("Ignore Modify ProfileData Test successfully");
 		System.out.println("\n");
@@ -282,9 +241,7 @@ public class UserProfile extends BaseClass {
 		profilepage.clickModifyProfile();
 
 		UpdateProfilePage updateprofilepage = new UpdateProfilePage(driver);
-		if (!updateprofilepage.updateUserProfileDisplayed()) {
-			return;
-		}
+		assertTrue(updateprofilepage.updateUserProfileDisplayed());
 
 		// swipe page up
 		Map<String, Object> args = new HashMap<String, Object>();
@@ -293,37 +250,28 @@ public class UserProfile extends BaseClass {
 
 		sleep(5000);
 
-		if (!updateprofilepage.buttonEditProfileDisplayed()) {
-			return;
-		}
+		assertTrue(updateprofilepage.buttonEditProfileDisplayed());
 
 		updateprofilepage.clickButtonEditProfile();
 
 		updateprofilepage.maxCharFN("1234567890qwertyuiop1234567890qwertyuiop123456789012");
-		if (!updateprofilepage.errorMaxCharFNDisplayed()) {
-			return;
-		}
-
+		
+		assertTrue(updateprofilepage.errorMaxCharFNDisplayed());
+		
 		sleep(5000);
 
 		updateprofilepage.maxCharLN("1234567890qwertyuiop1234567890qwertyuiop123456789012");
-		if (!updateprofilepage.errorMaxCharLNDisplayed()) {
-			return;
-		}
+		assertTrue(updateprofilepage.errorMaxCharLNDisplayed());
 
 		sleep(5000);
 
 		updateprofilepage.maxCharHA("1234567890qwertyuiop1234567890qwertyuiop12345678901234567890qwertyuiop1234567890qwertyuiop123456789012");
-		if (!updateprofilepage.errorMaxCharHADisplayed()) {
-			return;
-		}
+		assertTrue(updateprofilepage.errorMaxCharHADisplayed());
 
 		sleep(15000);
 
 		updateprofilepage.clickSaveProfile();
-		if (!updateprofilepage.errorPopUpMaxCharDisplayed()) {
-			return;
-		}
+		assertTrue(updateprofilepage.errorPopUpMaxCharDisplayed());
 
 		sleep(5000);
 
@@ -335,16 +283,12 @@ public class UserProfile extends BaseClass {
 		sleep(5000);
 
 		updateprofilepage.clickBackButton();
-		if (!profilepage.isWelcomeBackDisplayed()) {
-			return;
-		}
+		assertTrue(profilepage.isWelcomeBackDisplayed());
 
 		profilepage.clickSignOut();
 
 		SignInPage signinpage = new SignInPage(driver);
-		if (!signinpage.isSignInPageDisplayed()) {
-			return;
-		}
+		assertTrue(signinpage.isSignInPageDisplayed());
 
 		sleep(5000);
 
