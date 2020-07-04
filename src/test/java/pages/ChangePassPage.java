@@ -143,7 +143,19 @@ public class ChangePassPage extends BaseClass {
 	public void clickClearTextRepeatNewPassword() {
 		clearText3Element.click();
 	}
+	
+	public void clearTextOldPassword() {
+		oldPasswordElement.clear();
+	}
 
+	public void clearTextNewPassword() {
+		newPasswordElement.clear();
+	}
+
+	public void clearTextRepeatNewPassword() {
+		repeatNewPasswordElement.clear();
+	}
+	
 	public void clickConfirmPasswordChanges() {
 		confirmPasswordChangesButtonElement.click();
 	}
@@ -185,15 +197,15 @@ public class ChangePassPage extends BaseClass {
 	public void invalidOldPassword(String oldpassword, String newpassword, String repeatnewpassword) {
 
 		clickOldPassword();
-		clickClearTextOldPassword();
+		clearTextOldPassword();
 		typeOldPassword1(oldpassword);
 		clickDoneButtonKeyboard();
 		clickNewPassword();
-		clickClearTextNewPassword();
+		clearTextNewPassword();
 		typeNewPassword1(newpassword);
 		clickDoneButtonKeyboard();
 		clickRepeatNewPassword();
-		clickClearTextRepeatNewPassword();
+		clearTextRepeatNewPassword();
 		typeRepeatNewPassword1(repeatnewpassword);
 		clickDoneButtonKeyboard();
 		clickConfirmPasswordChanges();

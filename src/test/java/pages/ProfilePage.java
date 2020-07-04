@@ -57,6 +57,9 @@ public class ProfilePage extends BaseClass {
 
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Password\"]")
 	private IOSElement passwordElement;
+	
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"My Event\"]")
+	private IOSElement myEventElement;
 
 	/**************************************/
 
@@ -115,7 +118,10 @@ public class ProfilePage extends BaseClass {
 	public void clickModifyProfile1() {
 		buttonModifyProfileElement1.click();
 	}
-
+	
+	public void clickMyEvent() {
+		myEventElement.click();
+	}
 	/**************************************/
 
 	public void logout() {

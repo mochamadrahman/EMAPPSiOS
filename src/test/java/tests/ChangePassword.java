@@ -1,5 +1,7 @@
 package tests;
 
+import static org.testng.Assert.assertTrue;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -23,37 +25,27 @@ public class ChangePassword extends BaseClass {
 		System.out.println("\n-------ChangePasswordScenarioTest---------");
 
 		SignInPage signinpage = new SignInPage(driver);
-		if (!signinpage.isSignInPageDisplayed()) {
-			return;
-		}
+		assertTrue(signinpage.isSignInPageDisplayed());
 
 		signinpage.login("mrahmanh@gmail.com", "ccgl0618");
 
 		HomeScreenPage homescreenpage = new HomeScreenPage(driver);
-		if (!homescreenpage.isFavoritesDisplayed()) {
-			return;
-		}
+		assertTrue(homescreenpage.isFavoritesDisplayed());
 
 		homescreenpage.clickMore();
 
 		ProfilePage profilepage = new ProfilePage(driver);
-		if (!profilepage.isWelcomeBackDisplayed()) {
-			return;
-		}
+		assertTrue(profilepage.isWelcomeBackDisplayed());
 
 		System.out.println("\nStarting Success Change Password Test");
 
 		profilepage.clickPasswordChange();
 
 		ChangePassPage changepasspage = new ChangePassPage(driver);
-		if (!changepasspage.iscreateNewPasswordDisplayed()) {
-			return;
-		}
+		assertTrue(changepasspage.iscreateNewPasswordDisplayed());
 
 		changepasspage.changePassword("ccgl0618", "mrhh1975", "mrhh1975");
-		if (!changepasspage.isSuccessChangePasswordDisplayed()) {
-			return;
-		}
+		assertTrue(changepasspage.isSuccessChangePasswordDisplayed());
 
 		if (!profilepage.isWelcomeBackDisplayed()) {
 			return;
@@ -73,9 +65,7 @@ public class ChangePassword extends BaseClass {
 		System.out.println("\nStarting Login with New Password Test");
 
 		SignInPage signinpage = new SignInPage(driver);
-		if (!signinpage.isSignInPageDisplayed()) {
-			return;
-		}
+		assertTrue(signinpage.isSignInPageDisplayed());
 
 		signinpage.login("mrahmanh@gmail.com", "mrhh1975");
 
@@ -84,9 +74,7 @@ public class ChangePassword extends BaseClass {
 		homescreenpage.clickMore();
 
 		ProfilePage profilepage = new ProfilePage(driver);
-		if (!profilepage.isWelcomeBackDisplayed()) {
-			return;
-		}
+		assertTrue(profilepage.isWelcomeBackDisplayed());
 
 		profilepage.clickPasswordChange();
 
@@ -112,9 +100,8 @@ public class ChangePassword extends BaseClass {
 		ChangePassPage changepasspage = new ChangePassPage(driver);
 
 		changepasspage.differentNewPassword("ccgl0618", "mrhh1975", "mrhh19756");
-		if (!changepasspage.iserrorRepeatNewPasswordDisplayed()) {
-			return;
-		}
+		assertTrue(changepasspage.iserrorRepeatNewPasswordDisplayed());
+		
 
 		System.out.println("Different New Password Test successfully");
 		System.out.println("\n");
@@ -130,9 +117,7 @@ public class ChangePassword extends BaseClass {
 
 		ChangePassPage changepasspage = new ChangePassPage(driver);
 		changepasspage.invalidOldPassword("ccgl06189", "mrhh1975", "mrhh1975");
-		if (!changepasspage.isInvalidOldPasswordDisplayed()) {
-			return;
-		}
+		assertTrue(changepasspage.isInvalidOldPasswordDisplayed());
 
 		/*
 		 * This Waiting time just want to sure element Back can be identified by appium
@@ -143,9 +128,7 @@ public class ChangePassword extends BaseClass {
 		changepasspage.cancelChangePassword();
 
 		ProfilePage profilepage = new ProfilePage(driver);
-		if (!profilepage.isWelcomeBackDisplayed()) {
-			return;
-		}
+		assertTrue(profilepage.isWelcomeBackDisplayed());
 
 		System.out.println("Invalid Old Password Test successfully");
 		System.out.println("\n");
@@ -170,9 +153,7 @@ public class ChangePassword extends BaseClass {
 		ChangePassPage changepasspage = new ChangePassPage(driver);
 		changepasspage.cancelChangePassword();
 
-		if (!profilepage.isWelcomeBackDisplayed()) {
-			return;
-		}
+		assertTrue(profilepage.isWelcomeBackDisplayed());
 
 		System.out.println("Cancel Change Password Test successfully");
 		System.out.println("\n");

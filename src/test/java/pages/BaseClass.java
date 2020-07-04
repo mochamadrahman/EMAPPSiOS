@@ -28,8 +28,8 @@ public class BaseClass extends EmappsTestReport{
 
 			
 			caps.setCapability("platformName", "iOS");
-			caps.setCapability("platformVersion", "12.2");
-			caps.setCapability("deviceName", "iPhone 8 Plus");
+			caps.setCapability("platformVersion", "12.1");
+			caps.setCapability("deviceName", "iPhone XS Max");
 			caps.setCapability("resetKeyboard", true);
 			caps.setCapability("noReset", true);
 			caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "XCUITest");
@@ -39,6 +39,7 @@ public class BaseClass extends EmappsTestReport{
 			final File appDir = new File(classpathRoot, "");
 			final File app = new File(appDir, "iOSEmapps.ipa");
 //			caps.setCapability("app", app.getAbsolutePath());
+			caps.setCapability("app", "/Users/rahman/Library/Developer/Xcode/DerivedData/iOSEmapps-gztcaucoeuztcccsklwgcagdswwu/Build/Products/Debug-iphonesimulator/iOSEmapps.app");
 
 			URL url = new URL("http://localhost:4723/wd/hub");
 			driver = new IOSDriver<IOSElement>(url, caps);
