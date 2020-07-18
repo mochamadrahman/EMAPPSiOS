@@ -27,7 +27,7 @@ public class LoginLogout extends BaseClass {
 		signinpage.login("mrahmanh@gmail.com", "ccgl0618");
 
 		HomeScreenPage homescreenpage = new HomeScreenPage(driver);
-		assertTrue(homescreenpage.isFavoritesDisplayed());
+		assertTrue(homescreenpage.isHomeDisplayed());
 
 		System.out.println("Login Test successfully");
 		System.out.println("\n");

@@ -18,8 +18,8 @@ public class HomeScreenPage extends BaseClass {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 
-	@iOSXCUITFindBy(id = "Favorites")
-	private IOSElement favoritesElement;
+	@iOSXCUITFindBy(id = "Home")
+	private IOSElement homeElement;
 
 	@iOSXCUITFindBy(id = "More")
 	private IOSElement moreElement;
@@ -27,8 +27,8 @@ public class HomeScreenPage extends BaseClass {
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Login Successfuly!\"]")
 	private IOSElement loginSuccessfuly;
 
-	public boolean isFavoritesDisplayed() {
-		return favoritesElement.isDisplayed();
+	public boolean isHomeDisplayed() {
+		return homeElement.isDisplayed();
 	}
 
 	public boolean isloginSuccessfulyDisplayed() {

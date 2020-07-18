@@ -30,7 +30,7 @@ public class ChangePassword extends BaseClass {
 		signinpage.login("mrahmanh@gmail.com", "ccgl0618");
 
 		HomeScreenPage homescreenpage = new HomeScreenPage(driver);
-		assertTrue(homescreenpage.isFavoritesDisplayed());
+		assertTrue(homescreenpage.isHomeDisplayed());
 
 		homescreenpage.clickMore();
 
