@@ -186,6 +186,7 @@ public class MyCreateEvent extends BaseClass {
 		Map<String, Object> args1 = new HashMap<String, Object>();
 		args1.put("direction", "up");
 		driver.executeScript("mobile: swipe", args1);
+
 		
 		sleep(3000);
 		Map<String, Object> args2 = new HashMap<String, Object>();
@@ -224,10 +225,10 @@ public class MyCreateEvent extends BaseClass {
 		sleep(3000);
 		profilepage.clickSignOut();
 
+
 		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("You've successfully logged out")));
 
-		SignInPage signinpage = new SignInPage(driver);
-		assertTrue(signinpage.isSignInPageDisplayed());
+		sleep(3000);
 
 		/* Sign Out from App */
 

@@ -1,409 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="12" passed="12">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="EMAPPS iOS Suite" duration-ms="190088" started-at="2020-06-02T08:46:11 WIB" finished-at="2020-06-02T08:49:21 WIB">
+  <suite name="Default suite" duration-ms="478081" started-at="2020-07-21T10:40:00 WIB" finished-at="2020-07-21T10:47:58 WIB">
     <groups>
     </groups>
-    <test name="LoginLogoutScenarioTest" duration-ms="86009" started-at="2020-06-02T08:46:11 WIB" finished-at="2020-06-02T08:47:37 WIB">
-      <class name="tests.LoginLogout">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.LoginLogout@57e1b0c]" name="setup" is-config="true" duration-ms="8447" started-at="2020-06-02T08:46:11 WIB" finished-at="2020-06-02T08:46:19 WIB">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.LoginLogout@57e1b0c]" name="beforeMethod" is-config="true" duration-ms="5" started-at="2020-06-02T08:46:19 WIB" finished-at="2020-06-02T08:46:19 WIB">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.LoginLogout.Login()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="Login()[pri:1, instance:tests.LoginLogout@57e1b0c]" name="Login" duration-ms="12432" started-at="2020-06-02T08:46:19 WIB" finished-at="2020-06-02T08:46:32 WIB">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:tests.LoginLogout@57e1b0c]" name="getResult" is-config="true" duration-ms="5" started-at="2020-06-02T08:46:32 WIB" finished-at="2020-06-02T08:46:32 WIB">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Login status=SUCCESS method=LoginLogout.Login()[pri:1, instance:tests.LoginLogout@57e1b0c] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void tests.LoginLogout.Login()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.LoginLogout@57e1b0c]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-06-02T08:46:32 WIB" finished-at="2020-06-02T08:46:32 WIB">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.LoginLogout.Logout()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="Logout()[pri:2, instance:tests.LoginLogout@57e1b0c]" name="Logout" duration-ms="4007" started-at="2020-06-02T08:46:32 WIB" finished-at="2020-06-02T08:46:36 WIB">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Logout -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:tests.LoginLogout@57e1b0c]" name="getResult" is-config="true" duration-ms="0" started-at="2020-06-02T08:46:36 WIB" finished-at="2020-06-02T08:46:36 WIB">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Logout status=SUCCESS method=LoginLogout.Logout()[pri:2, instance:tests.LoginLogout@57e1b0c] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void tests.LoginLogout.Logout()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.LoginLogout@57e1b0c]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-06-02T08:46:36 WIB" finished-at="2020-06-02T08:46:36 WIB">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.LoginLogout.LoginInvalidUsername()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="LoginInvalidUsername()[pri:3, instance:tests.LoginLogout@57e1b0c]" name="LoginInvalidUsername" duration-ms="11495" started-at="2020-06-02T08:46:36 WIB" finished-at="2020-06-02T08:46:47 WIB">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginInvalidUsername -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:tests.LoginLogout@57e1b0c]" name="getResult" is-config="true" duration-ms="0" started-at="2020-06-02T08:46:47 WIB" finished-at="2020-06-02T08:46:47 WIB">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=LoginInvalidUsername status=SUCCESS method=LoginLogout.LoginInvalidUsername()[pri:3, instance:tests.LoginLogout@57e1b0c] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void tests.LoginLogout.LoginInvalidUsername()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.LoginLogout@57e1b0c]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-06-02T08:46:47 WIB" finished-at="2020-06-02T08:46:47 WIB">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.LoginLogout.LoginInvalidPassword()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="LoginInvalidPassword()[pri:4, instance:tests.LoginLogout@57e1b0c]" name="LoginInvalidPassword" duration-ms="14287" started-at="2020-06-02T08:46:47 WIB" finished-at="2020-06-02T08:47:02 WIB">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginInvalidPassword -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:tests.LoginLogout@57e1b0c]" name="getResult" is-config="true" duration-ms="1" started-at="2020-06-02T08:47:02 WIB" finished-at="2020-06-02T08:47:02 WIB">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=LoginInvalidPassword status=SUCCESS method=LoginLogout.LoginInvalidPassword()[pri:4, instance:tests.LoginLogout@57e1b0c] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void tests.LoginLogout.LoginInvalidPassword()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.LoginLogout@57e1b0c]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-06-02T08:47:02 WIB" finished-at="2020-06-02T08:47:02 WIB">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.LoginLogout.LoginBlankUsername()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="LoginBlankUsername()[pri:5, instance:tests.LoginLogout@57e1b0c]" name="LoginBlankUsername" duration-ms="13712" started-at="2020-06-02T08:47:02 WIB" finished-at="2020-06-02T08:47:15 WIB">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginBlankUsername -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:tests.LoginLogout@57e1b0c]" name="getResult" is-config="true" duration-ms="0" started-at="2020-06-02T08:47:15 WIB" finished-at="2020-06-02T08:47:15 WIB">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=LoginBlankUsername status=SUCCESS method=LoginLogout.LoginBlankUsername()[pri:5, instance:tests.LoginLogout@57e1b0c] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void tests.LoginLogout.LoginBlankUsername()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.LoginLogout@57e1b0c]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-06-02T08:47:15 WIB" finished-at="2020-06-02T08:47:15 WIB">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.LoginLogout.LoginBlankPassword()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="LoginBlankPassword()[pri:6, instance:tests.LoginLogout@57e1b0c]" name="LoginBlankPassword" duration-ms="12756" started-at="2020-06-02T08:47:15 WIB" finished-at="2020-06-02T08:47:28 WIB">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginBlankPassword -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:tests.LoginLogout@57e1b0c]" name="getResult" is-config="true" duration-ms="1" started-at="2020-06-02T08:47:28 WIB" finished-at="2020-06-02T08:47:28 WIB">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=LoginBlankPassword status=SUCCESS method=LoginLogout.LoginBlankPassword()[pri:6, instance:tests.LoginLogout@57e1b0c] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void tests.LoginLogout.LoginBlankPassword()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.LoginLogout@57e1b0c]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-06-02T08:47:28 WIB" finished-at="2020-06-02T08:47:28 WIB">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.LoginLogout.LoginBlankUsernameAndPassword()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="LoginBlankUsernameAndPassword()[pri:7, instance:tests.LoginLogout@57e1b0c]" name="LoginBlankUsernameAndPassword" duration-ms="8781" started-at="2020-06-02T08:47:28 WIB" finished-at="2020-06-02T08:47:37 WIB">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginBlankUsernameAndPassword -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:tests.LoginLogout@57e1b0c]" name="getResult" is-config="true" duration-ms="0" started-at="2020-06-02T08:47:37 WIB" finished-at="2020-06-02T08:47:37 WIB">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=LoginBlankUsernameAndPassword status=SUCCESS method=LoginLogout.LoginBlankUsernameAndPassword()[pri:7, instance:tests.LoginLogout@57e1b0c] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void tests.LoginLogout.LoginBlankUsernameAndPassword()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-      </class> <!-- tests.LoginLogout -->
-    </test> <!-- LoginLogoutScenarioTest -->
-    <test name="ChangePasswordScenarioTest" duration-ms="104040" started-at="2020-06-02T08:47:37 WIB" finished-at="2020-06-02T08:49:21 WIB">
-      <class name="tests.ChangePassword">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:tests.ChangePassword@436e852b]" name="beforeSuite" is-config="true" duration-ms="290" started-at="2020-06-02T08:46:10 WIB" finished-at="2020-06-02T08:46:11 WIB">
+    <test name="Default test" duration-ms="478081" started-at="2020-07-21T10:40:00 WIB" finished-at="2020-07-21T10:47:58 WIB">
+      <class name="tests.MyCreateEvent">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:tests.MyCreateEvent@27808f31]" name="beforeSuite" is-config="true" duration-ms="230" started-at="2020-07-21T10:39:59 WIB" finished-at="2020-07-21T10:40:00 WIB">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.ChangePassword@436e852b]" name="setup" is-config="true" duration-ms="8667" started-at="2020-06-02T08:47:37 WIB" finished-at="2020-06-02T08:47:45 WIB">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.MyCreateEvent@27808f31]" name="setup" is-config="true" duration-ms="128841" started-at="2020-07-21T10:40:00 WIB" finished-at="2020-07-21T10:42:08 WIB">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.ChangePassword@436e852b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-06-02T08:47:45 WIB" finished-at="2020-06-02T08:47:45 WIB">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.MyCreateEvent@27808f31]" name="beforeMethod" is-config="true" duration-ms="5" started-at="2020-07-21T10:42:08 WIB" finished-at="2020-07-21T10:42:08 WIB">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.ChangePassword.successChangePassword()]]>
+                <![CDATA[public void tests.MyCreateEvent.createEvent()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="successChangePassword()[pri:1, instance:tests.ChangePassword@436e852b]" name="successChangePassword" duration-ms="28602" started-at="2020-06-02T08:47:45 WIB" finished-at="2020-06-02T08:48:14 WIB">
+        <test-method status="PASS" signature="createEvent()[pri:1, instance:tests.MyCreateEvent@27808f31]" name="createEvent" duration-ms="158216" started-at="2020-07-21T10:42:08 WIB" finished-at="2020-07-21T10:44:47 WIB">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- successChangePassword -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:tests.ChangePassword@436e852b]" name="getResult" is-config="true" duration-ms="1" started-at="2020-06-02T08:48:14 WIB" finished-at="2020-06-02T08:48:14 WIB">
+        </test-method> <!-- createEvent -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:tests.MyCreateEvent@27808f31]" name="getResult" is-config="true" duration-ms="3" started-at="2020-07-21T10:44:47 WIB" finished-at="2020-07-21T10:44:47 WIB">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=successChangePassword status=SUCCESS method=ChangePassword.successChangePassword()[pri:1, instance:tests.ChangePassword@436e852b] output={null}]]]>
+                <![CDATA[[TestResult name=createEvent status=SUCCESS method=MyCreateEvent.createEvent()[pri:1, instance:tests.MyCreateEvent@27808f31] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void tests.ChangePassword.successChangePassword()]]>
+                <![CDATA[public void tests.MyCreateEvent.createEvent()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.ChangePassword@436e852b]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-06-02T08:48:14 WIB" finished-at="2020-06-02T08:48:14 WIB">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.MyCreateEvent@27808f31]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-07-21T10:44:47 WIB" finished-at="2020-07-21T10:44:47 WIB">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.ChangePassword.loginWithNewPassword()]]>
+                <![CDATA[public void tests.MyCreateEvent.readEvent()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="loginWithNewPassword()[pri:2, instance:tests.ChangePassword@436e852b]" name="loginWithNewPassword" duration-ms="23888" started-at="2020-06-02T08:48:14 WIB" finished-at="2020-06-02T08:48:38 WIB">
+        <test-method status="PASS" signature="readEvent()[pri:2, instance:tests.MyCreateEvent@27808f31]" name="readEvent" duration-ms="7959" started-at="2020-07-21T10:44:47 WIB" finished-at="2020-07-21T10:44:55 WIB">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithNewPassword -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:tests.ChangePassword@436e852b]" name="getResult" is-config="true" duration-ms="1" started-at="2020-06-02T08:48:38 WIB" finished-at="2020-06-02T08:48:38 WIB">
+        </test-method> <!-- readEvent -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:tests.MyCreateEvent@27808f31]" name="getResult" is-config="true" duration-ms="0" started-at="2020-07-21T10:44:55 WIB" finished-at="2020-07-21T10:44:55 WIB">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginWithNewPassword status=SUCCESS method=ChangePassword.loginWithNewPassword()[pri:2, instance:tests.ChangePassword@436e852b] output={null}]]]>
+                <![CDATA[[TestResult name=readEvent status=SUCCESS method=MyCreateEvent.readEvent()[pri:2, instance:tests.MyCreateEvent@27808f31] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void tests.ChangePassword.loginWithNewPassword()]]>
+                <![CDATA[public void tests.MyCreateEvent.readEvent()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.ChangePassword@436e852b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-06-02T08:48:38 WIB" finished-at="2020-06-02T08:48:38 WIB">
+        <test-method status="PASS" signature="updateEvent()[pri:3, instance:tests.MyCreateEvent@27808f31]" name="updateEvent" duration-ms="126624" started-at="2020-07-21T10:44:55 WIB" finished-at="2020-07-21T10:47:01 WIB">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateEvent -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.MyCreateEvent@27808f31]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-07-21T10:44:55 WIB" finished-at="2020-07-21T10:44:55 WIB">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.ChangePassword.differentNewPassword()]]>
+                <![CDATA[public void tests.MyCreateEvent.updateEvent()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="differentNewPassword()[pri:3, instance:tests.ChangePassword@436e852b]" name="differentNewPassword" duration-ms="12355" started-at="2020-06-02T08:48:38 WIB" finished-at="2020-06-02T08:48:50 WIB">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- differentNewPassword -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:tests.ChangePassword@436e852b]" name="getResult" is-config="true" duration-ms="1" started-at="2020-06-02T08:48:50 WIB" finished-at="2020-06-02T08:48:50 WIB">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:tests.MyCreateEvent@27808f31]" name="getResult" is-config="true" duration-ms="3" started-at="2020-07-21T10:47:01 WIB" finished-at="2020-07-21T10:47:01 WIB">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=differentNewPassword status=SUCCESS method=ChangePassword.differentNewPassword()[pri:3, instance:tests.ChangePassword@436e852b] output={null}]]]>
+                <![CDATA[[TestResult name=updateEvent status=SUCCESS method=MyCreateEvent.updateEvent()[pri:3, instance:tests.MyCreateEvent@27808f31] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void tests.ChangePassword.differentNewPassword()]]>
+                <![CDATA[public void tests.MyCreateEvent.updateEvent()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.ChangePassword@436e852b]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2020-06-02T08:48:50 WIB" finished-at="2020-06-02T08:48:50 WIB">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.MyCreateEvent@27808f31]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-07-21T10:47:01 WIB" finished-at="2020-07-21T10:47:01 WIB">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.ChangePassword.invalidOldPassword()]]>
+                <![CDATA[public void tests.MyCreateEvent.cancelEvent()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="invalidOldPassword()[pri:4, instance:tests.ChangePassword@436e852b]" name="invalidOldPassword" duration-ms="26814" started-at="2020-06-02T08:48:50 WIB" finished-at="2020-06-02T08:49:17 WIB">
+        <test-method status="PASS" signature="cancelEvent()[pri:4, instance:tests.MyCreateEvent@27808f31]" name="cancelEvent" duration-ms="56368" started-at="2020-07-21T10:47:01 WIB" finished-at="2020-07-21T10:47:58 WIB">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- invalidOldPassword -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:tests.ChangePassword@436e852b]" name="getResult" is-config="true" duration-ms="0" started-at="2020-06-02T08:49:17 WIB" finished-at="2020-06-02T08:49:17 WIB">
+        </test-method> <!-- cancelEvent -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:tests.MyCreateEvent@27808f31]" name="getResult" is-config="true" duration-ms="1" started-at="2020-07-21T10:47:58 WIB" finished-at="2020-07-21T10:47:58 WIB">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=invalidOldPassword status=SUCCESS method=ChangePassword.invalidOldPassword()[pri:4, instance:tests.ChangePassword@436e852b] output={null}]]]>
+                <![CDATA[[TestResult name=cancelEvent status=SUCCESS method=MyCreateEvent.cancelEvent()[pri:4, instance:tests.MyCreateEvent@27808f31] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void tests.ChangePassword.invalidOldPassword()]]>
+                <![CDATA[public void tests.MyCreateEvent.cancelEvent()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.ChangePassword@436e852b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-06-02T08:49:17 WIB" finished-at="2020-06-02T08:49:17 WIB">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.ChangePassword.cancelChangePassword()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="cancelChangePassword()[pri:5, instance:tests.ChangePassword@436e852b]" name="cancelChangePassword" duration-ms="3694" started-at="2020-06-02T08:49:17 WIB" finished-at="2020-06-02T08:49:21 WIB">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cancelChangePassword -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:tests.ChangePassword@436e852b]" name="getResult" is-config="true" duration-ms="0" started-at="2020-06-02T08:49:21 WIB" finished-at="2020-06-02T08:49:21 WIB">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=cancelChangePassword status=SUCCESS method=ChangePassword.cancelChangePassword()[pri:5, instance:tests.ChangePassword@436e852b] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void tests.ChangePassword.cancelChangePassword()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.ChangePassword@436e852b]" name="teardown" is-config="true" duration-ms="1056" started-at="2020-06-02T08:49:21 WIB" finished-at="2020-06-02T08:49:22 WIB">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.MyCreateEvent@27808f31]" name="teardown" is-config="true" duration-ms="1041" started-at="2020-07-21T10:47:58 WIB" finished-at="2020-07-21T10:47:59 WIB">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.ChangePassword@436e852b]" name="endReport" is-config="true" duration-ms="436" started-at="2020-06-02T08:49:22 WIB" depends-on-methods="pages.BaseClass.teardown" finished-at="2020-06-02T08:49:22 WIB">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.MyCreateEvent@27808f31]" name="endReport" is-config="true" duration-ms="276" started-at="2020-07-21T10:47:59 WIB" depends-on-methods="pages.BaseClass.teardown" finished-at="2020-07-21T10:47:59 WIB">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-      </class> <!-- tests.ChangePassword -->
-    </test> <!-- ChangePasswordScenarioTest -->
-  </suite> <!-- EMAPPS iOS Suite -->
+      </class> <!-- tests.MyCreateEvent -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

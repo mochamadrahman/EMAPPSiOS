@@ -20,10 +20,16 @@
 		</classes>
 	</test> -->
 	
-	<test name="ForgotAndNewPasswordScenarioTest">
+	 <!-- <test name="ForgotAndNewPasswordScenarioTest">
 		<classes>
 			<class name="tests.ForgotAndNewPassword" />
 		</classes>
-	</test>
+	</test>  -->
+	
+	 <test name="UserProfileScenarioTest">
+		<classes>
+			<class name="tests.UserProfile" />
+		</classes>
+	</test> 
 
 </suite>

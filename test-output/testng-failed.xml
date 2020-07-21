@@ -3,17 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.ChangePassword">
+      <class name="tests.MyCreateEvent">
         <methods>
           <include name="teardown"/>
           <include name="getResult"/>
+          <include name="cancelEvent"/>
           <include name="setup"/>
           <include name="beforeMethod"/>
           <include name="beforeSuite"/>
           <include name="endReport"/>
-          <include name="invalidOldPassword"/>
         </methods>
-      </class> <!-- tests.ChangePassword -->
+      </class> <!-- tests.MyCreateEvent -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
