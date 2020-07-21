@@ -3,17 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.MyCreateEvent">
+      <class name="tests.BrowseUpcomingEvent">
         <methods>
           <include name="teardown"/>
           <include name="getResult"/>
-          <include name="cancelEvent"/>
           <include name="setup"/>
           <include name="beforeMethod"/>
           <include name="beforeSuite"/>
           <include name="endReport"/>
+          <include name="browseEventAllCategories"/>
+          <include name="browseEventSpecificCategory"/>
         </methods>
-      </class> <!-- tests.MyCreateEvent -->
+      </class> <!-- tests.BrowseUpcomingEvent -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

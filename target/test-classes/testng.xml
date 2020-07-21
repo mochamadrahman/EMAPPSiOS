@@ -24,12 +24,23 @@
 		<classes>
 			<class name="tests.ForgotAndNewPassword" />
 		</classes>
-	</test>  -->
+	</test>  
 	
 	 <test name="UserProfileScenarioTest">
 		<classes>
 			<class name="tests.UserProfile" />
 		</classes>
 	</test> 
-
+	
+	<test name="MyCreateEventScenarioTest">
+		<classes>
+			<class name="tests.MyCreateEvent" />
+		</classes>
+	</test> -->
+		
+	<test name="BrowseUpcomingEventScenarioTest">
+		<classes>
+			<class name="tests.BrowseUpcomingEvent" />
+		</classes>
+	</test> 
 </suite>

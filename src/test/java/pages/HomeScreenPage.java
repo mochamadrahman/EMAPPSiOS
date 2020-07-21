@@ -48,6 +48,12 @@ public class HomeScreenPage extends BaseClass {
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"Outside event\"]")
 	private IOSElement outsideEventElement;
 	
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeNavigationBar[@name=\"iOSEmapps.DashboardPanelView\"]/XCUIElementTypeSearchField")
+	private IOSElement searchFieldTab;
+	
+	@iOSXCUITFindBy(id = "Search")
+	private IOSElement searchButtonKeyboard;
+	
 	/*===================================*/
 
 	public boolean isHomeDisplayed() {
@@ -99,7 +105,12 @@ public class HomeScreenPage extends BaseClass {
 		scrollObject.put("name", "Outside event");
 		driver.executeScript("mobile:scroll", scrollObject);
 	}
-
+	
+	public void searchEvent() {
+		searchFieldTab.click();
+		searchFieldTab.sendKeys("Yamaha");
+		searchButtonKeyboard.click();
+	}
 	/*===================================*/
 	
 	public void clickMore() {

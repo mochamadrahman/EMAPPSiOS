@@ -1,5 +1,4 @@
 
-
 package tests;
 
 import static org.testng.Assert.assertEquals;
@@ -58,16 +57,16 @@ public class BrowseUpcomingEvent extends BaseClass {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("Create Event has successfully")));
 
 		WebDriverWait wait1 = new WebDriverWait(driver, 60);
-		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeButton[@name=\"Back\"]"))).click();
-		
+		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeButton[@name=\"Back\"]")))
+				.click();
+
 		sleep(3000);
-		
+
 		profilepage.clickSignOut();
 		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("You've successfully logged out")));
 		assertTrue(signinpage.isSignInPageDisplayed());
 		signinpage.login("mrahmanh@gmail.com", "ccgl0618");
-		
-		
+
 		System.out.println("\n-------BrowseUpcomingEventTest---------");
 		System.out.println("\nStarting Check Event in Dashboard Panel (All Categories) Test");
 
@@ -77,23 +76,6 @@ public class BrowseUpcomingEvent extends BaseClass {
 
 		System.out.println("Check Event in Dashboard Panel (All Categories) Test successfully");
 		System.out.println("\n");
-		
-		/* ***** Sign Out from App ***** */
-
-//		homescreenpage.clickMore();
-//		
-//		sleep(3000);
-//		
-//		profilepage.clickSignOut();
-//		
-//		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("You've successfully logged out")));
-//
-//
-//		assertTrue(signinpage.isSignInPageDisplayed());
-//
-//		sleep(10000);
-
-		/* ***** Sign Out from App ***** */
 
 	}
 
@@ -101,14 +83,14 @@ public class BrowseUpcomingEvent extends BaseClass {
 	public void browseEventSpecificCategory() {
 
 		System.out.println("Starting Check Event in Specific Category Test");
-		
+
 		HomeScreenPage homescreenpage = new HomeScreenPage(driver);
 		assertTrue(homescreenpage.isHomeDisplayed());
-		
+
 		homescreenpage.clickOutsideEvent();
-		
+
 		sleep(3000);
-		
+
 		assertTrue(homescreenpage.isEventTitleDisplayed());
 		assertTrue(homescreenpage.isEventDescriptionDisplayed());
 		assertTrue(homescreenpage.isVenueAddressDisplayed());
@@ -118,24 +100,49 @@ public class BrowseUpcomingEvent extends BaseClass {
 		System.out.println("Check Event in Specific Category successfully");
 		System.out.println("\n");
 
-		ProfilePage profilepage = new ProfilePage(driver);
+	}
+
+	@Test(priority = 3)
+	public void browseEventByKeywords() {
+
+		System.out.println("Starting Check Event By Keywords Test");
+
+		HomeScreenPage homescreenpage = new HomeScreenPage(driver);
+
+		homescreenpage.searchEvent();
+
 		WebDriverWait wait1 = new WebDriverWait(driver, 60);
+		wait1.until(ExpectedConditions
+				.visibilityOfElementLocated(By.xpath("//XCUIElementTypeOther[@name=\"Search Event\"]")));
+
+		sleep(3000);
+
+		assertTrue(homescreenpage.isEventTitleDisplayed());
+		assertTrue(homescreenpage.isEventDescriptionDisplayed());
+		assertTrue(homescreenpage.isVenueAddressDisplayed());
+
+		sleep(10000);
+
+		System.out.println("Check Event By Keywords successfully");
+		System.out.println("\n");
 		
+		MyEventPage myeventpage = new MyEventPage(driver);
+		myeventpage.clickBACK();
+		
+		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("More")));
+		
+		ProfilePage profilepage = new ProfilePage(driver);
 
 		/* ***** Sign Out from App ***** */
-
 		homescreenpage.clickMore();
-		
+
 		sleep(3000);
-		
+
 		profilepage.clickSignOut();
-		
+
 		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("You've successfully logged out")));
-		
 
 		sleep(3000);
-
-		
 		/* ***** Sign Out from App ***** */
 
 	}

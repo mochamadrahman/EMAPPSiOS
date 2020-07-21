@@ -1,153 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="478081" started-at="2020-07-21T10:40:00 WIB" finished-at="2020-07-21T10:47:58 WIB">
+  <suite name="Default suite" duration-ms="430198" started-at="2020-07-21T17:46:33 WIB" finished-at="2020-07-21T17:53:43 WIB">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="478081" started-at="2020-07-21T10:40:00 WIB" finished-at="2020-07-21T10:47:58 WIB">
-      <class name="tests.MyCreateEvent">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:tests.MyCreateEvent@27808f31]" name="beforeSuite" is-config="true" duration-ms="230" started-at="2020-07-21T10:39:59 WIB" finished-at="2020-07-21T10:40:00 WIB">
+    <test name="Default test" duration-ms="430198" started-at="2020-07-21T17:46:33 WIB" finished-at="2020-07-21T17:53:43 WIB">
+      <class name="tests.BrowseUpcomingEvent">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:tests.BrowseUpcomingEvent@27808f31]" name="beforeSuite" is-config="true" duration-ms="217" started-at="2020-07-21T17:46:33 WIB" finished-at="2020-07-21T17:46:33 WIB">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.MyCreateEvent@27808f31]" name="setup" is-config="true" duration-ms="128841" started-at="2020-07-21T10:40:00 WIB" finished-at="2020-07-21T10:42:08 WIB">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.BrowseUpcomingEvent@27808f31]" name="setup" is-config="true" duration-ms="112042" started-at="2020-07-21T17:46:33 WIB" finished-at="2020-07-21T17:48:25 WIB">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.MyCreateEvent@27808f31]" name="beforeMethod" is-config="true" duration-ms="5" started-at="2020-07-21T10:42:08 WIB" finished-at="2020-07-21T10:42:08 WIB">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.BrowseUpcomingEvent@27808f31]" name="beforeMethod" is-config="true" duration-ms="6" started-at="2020-07-21T17:48:25 WIB" finished-at="2020-07-21T17:48:25 WIB">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.MyCreateEvent.createEvent()]]>
+                <![CDATA[public void tests.BrowseUpcomingEvent.browseEventAllCategories()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="createEvent()[pri:1, instance:tests.MyCreateEvent@27808f31]" name="createEvent" duration-ms="158216" started-at="2020-07-21T10:42:08 WIB" finished-at="2020-07-21T10:44:47 WIB">
+        <test-method status="PASS" signature="browseEventAllCategories()[pri:1, instance:tests.BrowseUpcomingEvent@27808f31]" name="browseEventAllCategories" duration-ms="237080" started-at="2020-07-21T17:48:25 WIB" finished-at="2020-07-21T17:52:22 WIB">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createEvent -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:tests.MyCreateEvent@27808f31]" name="getResult" is-config="true" duration-ms="3" started-at="2020-07-21T10:44:47 WIB" finished-at="2020-07-21T10:44:47 WIB">
+        </test-method> <!-- browseEventAllCategories -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:tests.BrowseUpcomingEvent@27808f31]" name="getResult" is-config="true" duration-ms="6" started-at="2020-07-21T17:52:22 WIB" finished-at="2020-07-21T17:52:22 WIB">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=createEvent status=SUCCESS method=MyCreateEvent.createEvent()[pri:1, instance:tests.MyCreateEvent@27808f31] output={null}]]]>
+                <![CDATA[[TestResult name=browseEventAllCategories status=SUCCESS method=BrowseUpcomingEvent.browseEventAllCategories()[pri:1, instance:tests.BrowseUpcomingEvent@27808f31] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void tests.MyCreateEvent.createEvent()]]>
+                <![CDATA[public void tests.BrowseUpcomingEvent.browseEventAllCategories()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.MyCreateEvent@27808f31]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-07-21T10:44:47 WIB" finished-at="2020-07-21T10:44:47 WIB">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.BrowseUpcomingEvent@27808f31]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-07-21T17:52:22 WIB" finished-at="2020-07-21T17:52:22 WIB">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.MyCreateEvent.readEvent()]]>
+                <![CDATA[public void tests.BrowseUpcomingEvent.browseEventSpecificCategory()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="readEvent()[pri:2, instance:tests.MyCreateEvent@27808f31]" name="readEvent" duration-ms="7959" started-at="2020-07-21T10:44:47 WIB" finished-at="2020-07-21T10:44:55 WIB">
+        <test-method status="PASS" signature="browseEventSpecificCategory()[pri:2, instance:tests.BrowseUpcomingEvent@27808f31]" name="browseEventSpecificCategory" duration-ms="25831" started-at="2020-07-21T17:52:22 WIB" finished-at="2020-07-21T17:52:48 WIB">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- readEvent -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:tests.MyCreateEvent@27808f31]" name="getResult" is-config="true" duration-ms="0" started-at="2020-07-21T10:44:55 WIB" finished-at="2020-07-21T10:44:55 WIB">
+        </test-method> <!-- browseEventSpecificCategory -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:tests.BrowseUpcomingEvent@27808f31]" name="getResult" is-config="true" duration-ms="1" started-at="2020-07-21T17:52:48 WIB" finished-at="2020-07-21T17:52:48 WIB">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=readEvent status=SUCCESS method=MyCreateEvent.readEvent()[pri:2, instance:tests.MyCreateEvent@27808f31] output={null}]]]>
+                <![CDATA[[TestResult name=browseEventSpecificCategory status=SUCCESS method=BrowseUpcomingEvent.browseEventSpecificCategory()[pri:2, instance:tests.BrowseUpcomingEvent@27808f31] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void tests.MyCreateEvent.readEvent()]]>
+                <![CDATA[public void tests.BrowseUpcomingEvent.browseEventSpecificCategory()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="updateEvent()[pri:3, instance:tests.MyCreateEvent@27808f31]" name="updateEvent" duration-ms="126624" started-at="2020-07-21T10:44:55 WIB" finished-at="2020-07-21T10:47:01 WIB">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateEvent -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.MyCreateEvent@27808f31]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-07-21T10:44:55 WIB" finished-at="2020-07-21T10:44:55 WIB">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.BrowseUpcomingEvent@27808f31]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-07-21T17:52:48 WIB" finished-at="2020-07-21T17:52:48 WIB">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.MyCreateEvent.updateEvent()]]>
+                <![CDATA[public void tests.BrowseUpcomingEvent.browseEventByKeywords()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:tests.MyCreateEvent@27808f31]" name="getResult" is-config="true" duration-ms="3" started-at="2020-07-21T10:47:01 WIB" finished-at="2020-07-21T10:47:01 WIB">
+        <test-method status="PASS" signature="browseEventByKeywords()[pri:3, instance:tests.BrowseUpcomingEvent@27808f31]" name="browseEventByKeywords" duration-ms="55158" started-at="2020-07-21T17:52:48 WIB" finished-at="2020-07-21T17:53:43 WIB">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browseEventByKeywords -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:tests.BrowseUpcomingEvent@27808f31]" name="getResult" is-config="true" duration-ms="1" started-at="2020-07-21T17:53:43 WIB" finished-at="2020-07-21T17:53:43 WIB">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=updateEvent status=SUCCESS method=MyCreateEvent.updateEvent()[pri:3, instance:tests.MyCreateEvent@27808f31] output={null}]]]>
+                <![CDATA[[TestResult name=browseEventByKeywords status=SUCCESS method=BrowseUpcomingEvent.browseEventByKeywords()[pri:3, instance:tests.BrowseUpcomingEvent@27808f31] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void tests.MyCreateEvent.updateEvent()]]>
+                <![CDATA[public void tests.BrowseUpcomingEvent.browseEventByKeywords()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.MyCreateEvent@27808f31]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-07-21T10:47:01 WIB" finished-at="2020-07-21T10:47:01 WIB">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.MyCreateEvent.cancelEvent()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="cancelEvent()[pri:4, instance:tests.MyCreateEvent@27808f31]" name="cancelEvent" duration-ms="56368" started-at="2020-07-21T10:47:01 WIB" finished-at="2020-07-21T10:47:58 WIB">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cancelEvent -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:tests.MyCreateEvent@27808f31]" name="getResult" is-config="true" duration-ms="1" started-at="2020-07-21T10:47:58 WIB" finished-at="2020-07-21T10:47:58 WIB">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=cancelEvent status=SUCCESS method=MyCreateEvent.cancelEvent()[pri:4, instance:tests.MyCreateEvent@27808f31] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void tests.MyCreateEvent.cancelEvent()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.MyCreateEvent@27808f31]" name="teardown" is-config="true" duration-ms="1041" started-at="2020-07-21T10:47:58 WIB" finished-at="2020-07-21T10:47:59 WIB">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.BrowseUpcomingEvent@27808f31]" name="teardown" is-config="true" duration-ms="1098" started-at="2020-07-21T17:53:43 WIB" finished-at="2020-07-21T17:53:44 WIB">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.MyCreateEvent@27808f31]" name="endReport" is-config="true" duration-ms="276" started-at="2020-07-21T10:47:59 WIB" depends-on-methods="pages.BaseClass.teardown" finished-at="2020-07-21T10:47:59 WIB">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.BrowseUpcomingEvent@27808f31]" name="endReport" is-config="true" duration-ms="871" started-at="2020-07-21T17:53:44 WIB" depends-on-methods="pages.BaseClass.teardown" finished-at="2020-07-21T17:53:45 WIB">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-      </class> <!-- tests.MyCreateEvent -->
+      </class> <!-- tests.BrowseUpcomingEvent -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
