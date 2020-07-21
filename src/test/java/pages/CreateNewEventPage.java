@@ -213,12 +213,20 @@ public class CreateNewEventPage extends BaseClass {
 		driver.executeScript("mobile: selectPickerWheelValue", params);
 	}
 
-	/* Month Element of StartDate */
-	public void startDateElement() {
+	/* Month Element of StartDate : Choose current month */
+	public void startDateMonthElement() {
 
 		WebElement picker = driver.findElementByXPath("//XCUIElementTypeApplication[@name=\"iOSEmapps\"]/XCUIElementTypeWindow[5]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeDatePicker/XCUIElementTypeOther/XCUIElementTypePickerWheel[1]");
 		pickerwheelStep(driver, picker, "next", 0.15);
 		pickerwheelStep(driver, picker, "previous", 0.15);
+
+	}
+	
+	/* Day Element of StartDate : Choose Tomorrow */
+	public void startDateDayElement() {
+
+		WebElement picker = driver.findElementByXPath("//XCUIElementTypeApplication[@name=\"iOSEmapps\"]/XCUIElementTypeWindow[5]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeDatePicker/XCUIElementTypeOther/XCUIElementTypePickerWheel[2]");		                                               
+		pickerwheelStep(driver, picker, "next", 0.15);
 
 	}
 
@@ -231,9 +239,16 @@ public class CreateNewEventPage extends BaseClass {
 	}
 
 	/* Month Element of EndDate */
-	public void endDateElement() {
+	public void endDateMonthElement() {
 
 		WebElement picker = driver.findElementByXPath("//XCUIElementTypeApplication[@name=\"iOSEmapps\"]/XCUIElementTypeWindow[5]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeDatePicker/XCUIElementTypeOther/XCUIElementTypePickerWheel[1]");
+		pickerwheelStep(driver, picker, "next", 0.15);
+	}
+	
+	/* Day Element of EndDate : Choose The Day after Tomorrow */
+	public void endDateDayElement() {
+
+		WebElement picker = driver.findElementByXPath("//XCUIElementTypeApplication[@name=\"iOSEmapps\"]/XCUIElementTypeWindow[5]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeDatePicker/XCUIElementTypeOther/XCUIElementTypePickerWheel[2]");
 		pickerwheelStep(driver, picker, "next", 0.15);
 	}
 
@@ -273,13 +288,15 @@ public class CreateNewEventPage extends BaseClass {
 		sleep(3000);
 		swipePageUp();
 		fieldStartDateElement.click();
-		startDateElement();
+//		startDateMonthElement();
+		startDateDayElement();
 		clickDoneButtonKeyboard();
 		fieldStartTimeElement.click();
 		startTimeElement();
 		clickDoneButtonKeyboard();
 		fieldEndtDateElement.click();
-		endDateElement();
+//		endDateMonthElement();
+		endDateDayElement();
 		clickDoneButtonKeyboard();
 		fieldEndTimeElement.click();
 		endTimeElement();

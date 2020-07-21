@@ -39,7 +39,7 @@ public class BaseClass extends EmappsTestReport{
 			final File appDir = new File(classpathRoot, "");
 			final File app = new File(appDir, "iOSEmapps.app");
 //			caps.setCapability("app", app.getAbsolutePath());
-			caps.setCapability("app", "/Users/rahman/Desktop/emapps-414/iOSEmapps.app");
+			caps.setCapability("app", "/Users/rahman/Desktop/development/iOSEmapps.app"); // working also for Event in dashboard panel (EMAPPS-385) and based on available category (EMAPPS-13)
 
 			URL url = new URL("http://localhost:4723/wd/hub");
 			driver = new IOSDriver<IOSElement>(url, caps);

@@ -59,7 +59,7 @@ public class SignInPage extends BaseClass {
 //	}
 	
 	public boolean isSignInPageDisplayed() {
-		return welcomeBackElement.isDisplayed();
+		return signInButtonElement.isDisplayed();
 	}
 
 	public boolean incorrectUserPassDisplayed() {
