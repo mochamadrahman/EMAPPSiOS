@@ -132,7 +132,7 @@ public class BrowseUpcomingEvent extends BaseClass {
 		
 		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("You've successfully logged out")));
 		
-		sleep(10000);
+		sleep(3000);
 		
 		/* ***** Sign Out from App ***** */
 
