@@ -52,15 +52,13 @@ public class MyCreateEvent extends BaseClass {
 
 		CreateNewEventPage createeventpage = new CreateNewEventPage(driver);
 		assertTrue(createeventpage.isEventOrganizerNameDisplayed());
-		createeventpage.createNewEvent1("GrassLanders", "Yamaha NMAX Touring to Cibodas", "Silaturahmi warga GrassLand",
-				"Cibodas, Puncak", "Coffee");
+		createeventpage.createNewEvent1("GrassLanders", "Yamaha NMAX Touring to Cibodas", "Silaturahmi warga GrassLand", "Cibodas, Puncak", "Coffee");
 
 		WebDriverWait wait = new WebDriverWait(driver, 60);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("Create Event has successfully")));
 
 		WebDriverWait wait1 = new WebDriverWait(driver, 60);
-		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeButton[@name=\"Back\"]")))
-				.click();
+		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeButton[@name=\"Back\"]"))).click();
 
 		System.out.println("Create New Event Test successfully");
 		System.out.println("\n");
@@ -103,27 +101,21 @@ public class MyCreateEvent extends BaseClass {
 
 		sleep(3000);
 
-		WebDriverWait wait1 = new WebDriverWait(driver, 30);
+		WebDriverWait wait1 = new WebDriverWait(driver, 60);
 
 		/* Update Event Title */
-		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
-				"//XCUIElementTypeApplication[@name=\"iOSEmapps\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeTextField")))
-				.clear();
-		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
-				"//XCUIElementTypeApplication[@name=\"iOSEmapps\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeTextField")))
-				.sendKeys("Honda Beat Touring to Bandung");
+
+		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeApplication[@name=\"iOSEmapps\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeTextField"))).clear();
+		sleep(3000);
+		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeApplication[@name=\"iOSEmapps\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeTextField"))).sendKeys("Honda Beat Touring to Bandung");
 
 		Map<String, Object> args = new HashMap<String, Object>();
 		args.put("direction", "up");
 		driver.executeScript("mobile: swipe", args);
 
 		/* Update Venue Address */
-		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
-				"//XCUIElementTypeApplication[@name=\"iOSEmapps\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeOther[10]/XCUIElementTypeTextField")))
-				.clear();
-		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
-				"//XCUIElementTypeApplication[@name=\"iOSEmapps\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeOther[10]/XCUIElementTypeTextField")))
-				.sendKeys("Bandung, Dago");
+		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeApplication[@name=\"iOSEmapps\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeOther[10]/XCUIElementTypeTextField"))).clear();
+		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeApplication[@name=\"iOSEmapps\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeOther[10]/XCUIElementTypeTextField"))).sendKeys("Bandung, Dago");
 
 		sleep(3000);
 		Map<String, Object> args1 = new HashMap<String, Object>();
@@ -131,12 +123,8 @@ public class MyCreateEvent extends BaseClass {
 		driver.executeScript("mobile: swipe", args1);
 
 		/* Update User Input */
-		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
-				"//XCUIElementTypeApplication[@name=\"iOSEmapps\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeOther[13]/XCUIElementTypeTextField")))
-				.click();
-		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
-				"//XCUIElementTypeApplication[@name=\"iOSEmapps\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeOther[13]/XCUIElementTypeTextField")))
-				.sendKeys("Coffee");
+		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeApplication[@name=\"iOSEmapps\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeOther[13]/XCUIElementTypeTextField"))).click();
+		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeApplication[@name=\"iOSEmapps\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeOther[13]/XCUIElementTypeTextField"))).sendKeys("Coffee");
 
 		/* Hide Keyboard */
 		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("Toolbar Done Button"))).click();
@@ -146,8 +134,7 @@ public class MyCreateEvent extends BaseClass {
 
 		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("Update Event has successfully")));
 
-		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeButton[@name=\"Back\"]")))
-				.click();
+		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeButton[@name=\"Back\"]"))).click();
 
 		sleep(3000);
 
@@ -187,7 +174,6 @@ public class MyCreateEvent extends BaseClass {
 		args1.put("direction", "up");
 		driver.executeScript("mobile: swipe", args1);
 
-		
 		sleep(3000);
 		Map<String, Object> args2 = new HashMap<String, Object>();
 		args2.put("direction", "up");
@@ -201,8 +187,7 @@ public class MyCreateEvent extends BaseClass {
 
 		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("Cancel Event has successfully")));
 
-		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeButton[@name=\"Back\"]")))
-				.click();
+		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeButton[@name=\"Back\"]"))).click();
 
 		sleep(3000);
 
@@ -219,12 +204,10 @@ public class MyCreateEvent extends BaseClass {
 		/* Sign Out from App */
 
 //		WebDriverWait wait1 = new WebDriverWait(driver, 30);
-		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeButton[@name=\"Back\"]")))
-				.click();
+		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeButton[@name=\"Back\"]"))).click();
 
 		sleep(3000);
 		profilepage.clickSignOut();
-
 
 		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("You've successfully logged out")));
 

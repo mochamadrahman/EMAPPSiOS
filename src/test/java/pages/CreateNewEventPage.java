@@ -303,10 +303,12 @@ public class CreateNewEventPage extends BaseClass {
 		clickDoneButtonKeyboard();
 		clickEventVenueAddress();
 		typeVenueAddress(venueaddress);
+		sleep(3000);
 		clickDoneButtonKeyboard();
 		swipePageUp();
 		clickEventUserInput();
 		typeUserInput(userinput);
+		sleep(3000);
 		clickDoneButtonKeyboard();
 		clickEventPublish();
 	}

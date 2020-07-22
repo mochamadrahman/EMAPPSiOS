@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite thread-count="1" verbose="1" name="EMAPPS iOS Suite">
+<suite thread-count="1" verbose="2" name="EMAPPS iOS Suite">
 
 	<!-- <test name="LoginLogoutScenarioTest">
 		<classes>
@@ -30,17 +30,17 @@
 		<classes>
 			<class name="tests.UserProfile" />
 		</classes>
-	</test> 
+	</test> -->
 	
 	<test name="MyCreateEventScenarioTest">
 		<classes>
 			<class name="tests.MyCreateEvent" />
 		</classes>
-	</test> -->
+	</test> 
 		
-	<test name="BrowseUpcomingEventScenarioTest">
+	<!-- <test name="BrowseUpcomingEventScenarioTest">
 		<classes>
 			<class name="tests.BrowseUpcomingEvent" />
 		</classes>
-	</test> 
+	</test> --> 
 </suite>

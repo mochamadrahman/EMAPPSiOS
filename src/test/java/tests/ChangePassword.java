@@ -159,6 +159,18 @@ public class ChangePassword extends BaseClass {
 		System.out.println("\n");
 
 		sleep(5000);
+		
+		/* ***** Sign Out from App ***** */
+		
+		WebDriverWait wait1 = new WebDriverWait(driver, 60);
+		sleep(3000);
+
+		profilepage.clickSignOut();
+
+		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("You've successfully logged out")));
+
+		sleep(3000);
+		/* ***** Sign Out from App ***** */
 
 	}
 

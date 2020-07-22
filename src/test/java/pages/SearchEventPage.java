@@ -1,6 +1,8 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.IOSElement;
@@ -23,9 +25,16 @@ public class SearchEventPage extends BaseClass {
 	
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Back\"]")
 	private IOSElement backButtonElement;
+	
+	@iOSXCUITFindBy(id = "No events available at the moment")
+	private IOSElement noEventsAvailableElement;
 
 	
 	/**************************************/
+	
+	public boolean isNoEventsAvailableDisplay() {
+		return noEventsAvailableElement.isEnabled();
+	}
 
 	
 	}

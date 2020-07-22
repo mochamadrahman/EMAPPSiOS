@@ -146,6 +146,44 @@ public class BrowseUpcomingEvent extends BaseClass {
 		/* ***** Sign Out from App ***** */
 
 	}
+	
+//	@Test(priority = 4)
+//	public void browseNoAvailableEventByKeywords() {
+//
+//		System.out.println("Starting Browse No Available Event By Keywords Test");
+//
+//		HomeScreenPage homescreenpage = new HomeScreenPage(driver);
+//
+//		homescreenpage.searchEvent();
+//
+//		WebDriverWait wait1 = new WebDriverWait(driver, 60);
+//		wait1.until(ExpectedConditions
+//				.visibilityOfElementLocated(By.xpath("//XCUIElementTypeOther[@name=\"Search Event\"]")));
+//		sleep(10000);
+//
+//		System.out.println("Browse No Available Event By Keywords successfully");
+//		System.out.println("\n");
+//		
+//		MyEventPage myeventpage = new MyEventPage(driver);
+//		myeventpage.clickBACK();
+//		
+//		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("More")));
+//		
+//		ProfilePage profilepage = new ProfilePage(driver);
+//
+//		/* ***** Sign Out from App ***** */
+//		homescreenpage.clickMore();
+//
+//		sleep(3000);
+//
+//		profilepage.clickSignOut();
+//
+//		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("You've successfully logged out")));
+//
+//		sleep(3000);
+//		/* ***** Sign Out from App ***** */
+//
+//	}
 
 	private void sleep(long m) {
 		try {
