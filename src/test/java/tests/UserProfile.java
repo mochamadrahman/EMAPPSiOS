@@ -5,6 +5,9 @@ import static org.testng.Assert.assertTrue;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.ExtentTest;
@@ -83,6 +86,10 @@ public class UserProfile extends BaseClass {
 		Map<String, Object> args = new HashMap<String, Object>();
 		args.put("direction", "up");
 		driver.executeScript("mobile: swipe", args);
+		
+		Map<String, Object> args1 = new HashMap<String, Object>();
+		args1.put("direction", "up");
+		driver.executeScript("mobile: swipe", args1);
 
 		sleep(3000);
 
@@ -91,19 +98,23 @@ public class UserProfile extends BaseClass {
 		updateprofilepage.modifyProfile("Azhar", "Fahlavi", "Bandung");
 
 		sleep(3000);
+		
+		Map<String, Object> args3 = new HashMap<String, Object>();
+		args3.put("direction", "up");
+		driver.executeScript("mobile: swipe", args3);
 
 		updateprofilepage.clickSaveProfile();
 
-		assertTrue(updateprofilepage.successUpdateProfileDisplayed());
-
-		sleep(3000);
-
 		// swipe page down
-		Map<String, Object> args1 = new HashMap<String, Object>();
-		args1.put("direction", "down");
-		driver.executeScript("mobile: swipe", args1);
+		Map<String, Object> args2 = new HashMap<String, Object>();
+		args2.put("direction", "down");
+		driver.executeScript("mobile: swipe", args2);
+		
+		WebDriverWait wait = new WebDriverWait(driver, 60);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("Update Profile Successfully!")));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("back_button"))).click();
 
-		updateprofilepage.clickBackButton();
+//		updateprofilepage.clickBackButton();
 
 		System.out.println("Modify ProfileData Test successfully");
 		System.out.println("\n");
@@ -153,6 +164,10 @@ public class UserProfile extends BaseClass {
 		Map<String, Object> args = new HashMap<String, Object>();
 		args.put("direction", "up");
 		driver.executeScript("mobile: swipe", args);
+		
+		Map<String, Object> args1 = new HashMap<String, Object>();
+		args1.put("direction", "up");
+		driver.executeScript("mobile: swipe", args1);
 
 		sleep(5000);
 
@@ -161,19 +176,21 @@ public class UserProfile extends BaseClass {
 		updateprofilepage.modifyProfile("Moch", "Rahman", "Jakarta");
 
 		sleep(5000);
+		
+		Map<String, Object> args3 = new HashMap<String, Object>();
+		args3.put("direction", "up");
+		driver.executeScript("mobile: swipe", args3);
 
 		updateprofilepage.clickSaveProfile();
 
-		assertTrue(updateprofilepage.successUpdateProfileDisplayed());
-
-		sleep(5000);
-
 		// swipe page down
-		Map<String, Object> args1 = new HashMap<String, Object>();
-		args1.put("direction", "down");
-		driver.executeScript("mobile: swipe", args1);
-
-		updateprofilepage.clickBackButton();
+		Map<String, Object> args2 = new HashMap<String, Object>();
+		args2.put("direction", "down");
+		driver.executeScript("mobile: swipe", args2);
+		
+		WebDriverWait wait = new WebDriverWait(driver, 60);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("Update Profile Successfully!")));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("back_button"))).click();
 
 		System.out.println("Modify Back ProfileData Test successfully");
 		System.out.println("\n");
@@ -197,6 +214,10 @@ public class UserProfile extends BaseClass {
 		Map<String, Object> args = new HashMap<String, Object>();
 		args.put("direction", "up");
 		driver.executeScript("mobile: swipe", args);
+		
+		Map<String, Object> args2 = new HashMap<String, Object>();
+		args2.put("direction", "up");
+		driver.executeScript("mobile: swipe", args2);
 
 		sleep(5000);
 
@@ -210,8 +231,10 @@ public class UserProfile extends BaseClass {
 		Map<String, Object> args1 = new HashMap<String, Object>();
 		args1.put("direction", "down");
 		driver.executeScript("mobile: swipe", args1);
-
-		updateprofilepage.clickBackButton();
+		
+		WebDriverWait wait = new WebDriverWait(driver, 60);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("Update Profile Successfully!")));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("back_button"))).click();
 
 		assertTrue(profilepage.isWelcomeBackDisplayed());
 

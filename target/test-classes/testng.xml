@@ -2,45 +2,45 @@
 
 <suite thread-count="1" verbose="2" name="EMAPPS iOS Suite">
 
-	<!-- <test name="LoginLogoutScenarioTest">
+	<!--  <test name="LoginLogoutScenarioTest">
 		<classes>
 			<class name="tests.LoginLogout" />
 		</classes>
-	</test>
+	</test> 
 
 	<test name="RegistrationScenarioTest">
 		<classes>
 			<class name="tests.Registration" />
 		</classes>
-	</test>
+	</test> 
 
 	<test name="ChangePasswordScenarioTest">
 		<classes>
 			<class name="tests.ChangePassword" />
 		</classes>
-	</test> -->
+	</test> 
 	
-	 <!-- <test name="ForgotAndNewPasswordScenarioTest">
+	<test name="ForgotAndNewPasswordScenarioTest">
 		<classes>
 			<class name="tests.ForgotAndNewPassword" />
 		</classes>
-	</test>  
+	</test> 
 	
-	 <test name="UserProfileScenarioTest">
+	<test name="UserProfileScenarioTest">
 		<classes>
 			<class name="tests.UserProfile" />
 		</classes>
-	</test> -->
+	</test> 
 	
 	<test name="MyCreateEventScenarioTest">
 		<classes>
 			<class name="tests.MyCreateEvent" />
 		</classes>
-	</test> 
+	</test> -->
 		
-	<!-- <test name="BrowseUpcomingEventScenarioTest">
+	<test name="BrowseUpcomingEventScenarioTest">
 		<classes>
 			<class name="tests.BrowseUpcomingEvent" />
 		</classes>
-	</test> --> 
+	</test>
 </suite>

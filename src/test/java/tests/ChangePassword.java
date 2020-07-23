@@ -105,18 +105,23 @@ public class ChangePassword extends BaseClass {
 
 		System.out.println("Different New Password Test successfully");
 		System.out.println("\n");
-
+		
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("Back"))).click();
 	}
 
 	@Test(priority = 4)
 	public void invalidOldPassword() {
 
 		sleep(5000);
+		
+		ProfilePage profilepage = new ProfilePage(driver);
+		profilepage.clickPasswordChange();
 
 		System.out.println("Starting Invalid Old Password Test");
 
 		ChangePassPage changepasspage = new ChangePassPage(driver);
-		changepasspage.invalidOldPassword("ccgl06189", "mrhh1975", "mrhh1975");
+		changepasspage.changePassword("ccgl06189", "mrhh1975", "mrhh1975");
 		assertTrue(changepasspage.isInvalidOldPasswordDisplayed());
 
 		/*
@@ -127,7 +132,6 @@ public class ChangePassword extends BaseClass {
 
 		changepasspage.cancelChangePassword();
 
-		ProfilePage profilepage = new ProfilePage(driver);
 		assertTrue(profilepage.isWelcomeBackDisplayed());
 
 		System.out.println("Invalid Old Password Test successfully");

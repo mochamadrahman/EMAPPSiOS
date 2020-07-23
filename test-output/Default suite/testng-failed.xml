@@ -3,18 +3,21 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.BrowseUpcomingEvent">
+      <class name="tests.UserProfile">
         <methods>
           <include name="teardown"/>
+          <include name="modifyBackProfileData"/>
           <include name="getResult"/>
+          <include name="ignoreModifyProfileData"/>
           <include name="setup"/>
           <include name="beforeMethod"/>
           <include name="beforeSuite"/>
+          <include name="modifyProfileData"/>
           <include name="endReport"/>
-          <include name="browseEventAllCategories"/>
-          <include name="browseEventSpecificCategory"/>
+          <include name="checkMaxCharsProfileData"/>
+          <include name="validateNEWProfileData"/>
         </methods>
-      </class> <!-- tests.BrowseUpcomingEvent -->
+      </class> <!-- tests.UserProfile -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

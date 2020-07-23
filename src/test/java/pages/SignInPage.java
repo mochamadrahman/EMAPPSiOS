@@ -58,6 +58,14 @@ public class SignInPage extends BaseClass {
 //		return eventManagementElement.isDisplayed();
 //	}
 	
+	@iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"Clear text\"])[1]")
+	private IOSElement buttonClearTextEmailElement;
+
+	@iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"Clear text\"])[2]")
+	private IOSElement buttonClearTextPasswordElement;
+	
+	/* ********************************************************** */
+	
 	public boolean isSignInPageDisplayed() {
 		return signInButtonElement.isDisplayed();
 	}
@@ -79,7 +87,7 @@ public class SignInPage extends BaseClass {
 	}
 
 	public void clearEmail() {
-		emailElement.clear();
+		emailElement.click();
 	}
 
 	public void typePassword(String password) {
@@ -87,7 +95,7 @@ public class SignInPage extends BaseClass {
 	}
 
 	public void clearPassword() {
-		passwordElement.clear();
+		passwordElement.click();
 	}
 
 	public void clickSigIn() {
@@ -105,6 +113,16 @@ public class SignInPage extends BaseClass {
 	public void clickDoneButtonKeyboard() {
 		hideKeyboard.click();
 	}
+	
+	public void clearTextEmail() {
+		buttonClearTextEmailElement.click();
+	}
+
+	public void clearTextPassword() {
+		buttonClearTextPasswordElement.click();
+	}
+	
+	/* ******************************************** */
 
 	public void login(String name, String password) {
 		
@@ -119,9 +137,11 @@ public class SignInPage extends BaseClass {
 	public void negatiflogin(String name, String password) {
 
 		clearEmail();
+		clearTextEmail();
 		typeEmail(name);
 		clickDoneButtonKeyboard();
 		clearPassword();
+		clearTextPassword();
 		typePassword(password);
 		clickDoneButtonKeyboard();
 		clickSigIn();
@@ -137,6 +157,7 @@ public class SignInPage extends BaseClass {
 		typeEmail1(name);
 		clickDoneButtonKeyboard();
 		clearPassword();
+		clearTextPassword();
 		typePassword(password);
 		clickDoneButtonKeyboard();
 		clickSigIn();
@@ -145,6 +166,7 @@ public class SignInPage extends BaseClass {
 	public void negatiflogin2(String name, String password) {
 
 		clearEmail();
+		clearTextEmail();
 		
 		/* This Waiting time just want to sure element "Toolbar Done Button" can be identified by appium */
 		WebDriverWait wait = new WebDriverWait(driver, 30);

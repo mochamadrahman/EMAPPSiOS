@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="1" guice-stage="DEVELOPMENT" verbose="2" name="Failed suite [EMAPPS iOS Suite]">
-  <test thread-count="1" verbose="2" name="MyCreateEventScenarioTest(failed)">
+  <test thread-count="1" verbose="2" name="UserProfileScenarioTest(failed)">
     <classes>
-      <class name="tests.MyCreateEvent">
+      <class name="tests.UserProfile">
         <methods>
           <include name="teardown"/>
+          <include name="modifyBackProfileData"/>
           <include name="getResult"/>
-          <include name="readEvent"/>
-          <include name="cancelEvent"/>
+          <include name="ignoreModifyProfileData"/>
           <include name="setup"/>
           <include name="beforeMethod"/>
-          <include name="updateEvent"/>
           <include name="beforeSuite"/>
           <include name="endReport"/>
-          <include name="createEvent"/>
+          <include name="checkMaxCharsProfileData"/>
+          <include name="validateNEWProfileData"/>
         </methods>
-      </class> <!-- tests.MyCreateEvent -->
+      </class> <!-- tests.UserProfile -->
     </classes>
-  </test> <!-- MyCreateEventScenarioTest(failed) -->
+  </test> <!-- UserProfileScenarioTest(failed) -->
 </suite> <!-- Failed suite [EMAPPS iOS Suite] -->
